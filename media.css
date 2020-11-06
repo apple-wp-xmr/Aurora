@@ -1,0 +1,103 @@
+@media only screen and (max-width: 992px) {
+    .main-header__search-bar {
+        width: 100%;
+    }
+    .main-header__search-bar input {
+        width: 100%;
+    }
+    .lower-header__first-line div:first-child, .lower-header__first-line div:last-child {
+        flex-shrink: 0;
+    }
+    .main-header__nav li a {
+        padding: 0 12px;
+    }
+    .lists {
+        padding-left: 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .visible-xs {
+        display: block;
+    }
+    .toggle i {
+        display: block;
+        width: 20px;
+        height: 3px;
+        margin-bottom: 3px;
+        background-color: #fff;
+    }
+    .toggle i:last-child {
+        margin-bottom: 0;
+    }
+    header:hover .toggle i {
+        background-color: #000;
+    }
+    .account a {
+        display: none;
+    }
+    .main-header__search-bar {
+        display: none;
+    }
+    .brand__wrapper {
+        order: 1;
+    }
+    .account {
+        order: 2;
+    }
+    .main-header__nav {
+        display: none;
+    }
+    .lists {
+        display: block;
+    }
+    .lists ul:not(.list--social) {
+        display: none;
+    }
+    .lists ul.in {
+        display: block;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #e1e0e1;
+    }
+    .lists p {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0;
+        padding: 14px 0;
+    }
+    .lists p br {
+        display: none;
+    }
+    .lists p:before {
+        width: 10px;
+        height: 10px;
+        border: solid #000;
+        border-width: 0 2px 2px 0;
+        margin-left: 15px;
+        display: block;
+        position: absolute;
+        transform: rotate(45deg);
+        transition: all .3s;
+        content: "";
+        right: 5px;
+        top: 14px;
+    }
+    .lists p.collapsed:before {
+        transform: rotate(-45deg);
+    }
+    .lists p.collapsed {
+        border-bottom: 1px solid #e1e0e1;
+    }
+    .lists p.title--social {
+        display: none;
+    }
+    .lists ul.list--social {
+        justify-content: center;
+        margin-top: 24px;
+    }
+    footer {
+        padding-top: 2px;
+    }
+    .copyright {
+        margin-top: 7px;
+    }
+}

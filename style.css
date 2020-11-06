@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+p, ul {
+    margin: 0;
+}
+  
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Poppins";
+}
+a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+header {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.upper-header {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    padding: 3px 0px;   
+}
+.upper-header__title {
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+}
+.upper-header__location {
+    margin-right: 1.5rem;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;  
+}
+.upper-header__location span {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: 0.0833333px;
+    color: #000000;
+    margin-left: 5px;
+}
+
+.lower-header {
+    padding: 16px 24px 24px;
+}
+
+.lower-header__first-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 57px;
+    letter-spacing: 0.95px;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    display: inline-block;
+}
+
+.main-header__search-bar input {
+    background: rgba(247, 247, 247, 0.24);
+    mix-blend-mode: normal;
+    border-radius: 3px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 16px;
+    border: none;
+    outline: none;
+    width: 584px;
+    background-image: url("images/search.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: calc(100% - 16px) center;  
+}
+
+.main-header__search-bar input::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.account .basket {
+    content: "";
+    width: 16px;
+    height: 23px;
+    background-image: url(images/basket.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 7px;
+    margin-top: -4px;
+    display: inline-block;
+}
+
+.account a::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.account a:first-child::before{
+    display: none;
+}
+
+.account a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    position: relative;
+    padding: 0 10px;
+}
+
+.main-header__nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 24px;
+}
+
+.main-header__nav li a {
+    padding: 0 15px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+}
+header:hover {
+    background-color: #ffffff;
+}
+header:hover a {
+    color: #000000;
+}
+header:hover input {
+    background-color: #F7F7F7;
+    background-image: url(images/search_black.svg);
+    color: #000000;
+}
+header:hover input::placeholder {
+    color: #000000;
+}
+header:hover .account a::before {
+    background-color: #000000;
+}
+header:hover .basket {
+    background-image: url(images/basket_black.svg);
+}
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+}
+.swiper-slide {
+    padding-top: 100px;
+    background-size: cover;
+    background-position: center center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 90px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup {
+    padding: 32px 15px;
+}
+.signup p {
+    font-family: Poppins;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.872727px;
+    margin: 0 auto 14px;
+    max-width: 440px;
+}
+.signup form {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 440px;
+}
+.signup input {
+    border: 1px solid #E1E0E1;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 8px 11px;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #4A4A4A;
+    width: calc(100% - 107px);
+}
+.signup button {
+    background: #000000;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    height: 32px;
+    min-width: 95px;
+    border: none;
+}
+footer {
+    background-color: #f7f7f7;
+    padding: 26px 16px 14px;
+}
+.lists {
+    display: flex;
+    max-width: 940px;
+    padding-left: 30px;
+    margin: auto;
+    justify-content: space-between;
+}
+.list p {
+    font-family: "Cormorant Garamond";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.16364px;
+    margin-bottom: 14px;
+}
+.list ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+.list ul li a {
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.1px;
+    display: inline-block;
+    padding: 3px 0;
+}
+.list--social {
+    display: flex;
+}
+.list--social a {
+    display: inline-block;
+    margin-right: 16px;
+}
+.copyright {
+    text-align: center;
+    font-size: 9px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-top: 38px;
+}
+.visible-xs {
+    display: none;
+}
